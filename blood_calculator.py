@@ -37,6 +37,17 @@ def HDL_Driver():
     classification = check_HDL(HDL_value)
     print_result("HDL", HDL_value, classification)
 
+def check_LDL(LDL_value):
+    if LDL_value >= 190:
+        answer = "Very High"
+    elif 189 > LDL_value >= 160:
+        answer = "High"
+    elif 160 > LDL_value >= 130:
+        answer = "Borderline High"
+    else:
+        answer = "Normal"
+    return answer
+
 def LDL_Driver():
     LDL_value = accept_input("LDL")
     classification = check_LDL(LDL_value)
