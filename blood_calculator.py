@@ -56,5 +56,10 @@ def LDL_Driver():
     classification = check_LDL(LDL_value)
     print_result("LDL", LDL_value, classification)
 
+def totCholesterol_Driver():
+    totCholesterol_value = accept_input("Total Cholesterol")
+    classification = check_totCholesterol(totCholesterol_value)
+    print_result("Total Cholesterol", totCholesterol_value, classification)
+
 interface()
 
