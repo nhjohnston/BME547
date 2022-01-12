@@ -71,4 +71,3 @@ def totCholesterol_Driver():
     print_result("Total Cholesterol", totCholesterol_value, classification)
 
 interface()
-
