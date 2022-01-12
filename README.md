@@ -12,3 +12,5 @@ Here are the specifcations for my database
 * Address
     - Street
     - City
+    - HDL
+    - LDL
