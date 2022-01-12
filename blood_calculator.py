@@ -14,8 +14,8 @@ def interface():
             HDL_Driver()
         elif choice == "2":
             LDL_Driver()
-        elif choice == "3"
-            totCholesterol_Diver()
+        elif choice == "3":
+            totCholesterol_Driver()
         return
 
 def accept_input(test_name):
@@ -56,6 +56,15 @@ def LDL_Driver():
     classification = check_LDL(LDL_value)
     print_result("LDL", LDL_value, classification)
 
+def check_totCholesterol(totCholesterol_value):
+    if totCholesterol_value >= 240:
+        answer = "High"
+    elif 239 > totCholesterol_value >= 200:
+        answer = "Borderline High"
+    else:
+        answer = "Normal"
+    return answer
+    
 def totCholesterol_Driver():
     totCholesterol_value = accept_input("Total Cholesterol")
     classification = check_totCholesterol(totCholesterol_value)
