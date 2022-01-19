@@ -1,3 +1,6 @@
+# print on the first line of code only if you want this to run when it is imported
+print("This is the blood_calculator module and python calss it {}".format(__name__))
+
 def interface():
     print("Blood Test Analysis")
     keep_running = True
@@ -70,4 +73,7 @@ def totCholesterol_Driver():
     classification = check_totCholesterol(totCholesterol_value)
     print_result("Total Cholesterol", totCholesterol_value, classification)
 
-interface()
+# only want to call interface() if this is the __main__ module
+# good practice to start with this if statement, to signal this is where the code starts
+if __name__ == "__main__":
+    interface()
