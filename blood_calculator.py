@@ -1,5 +1,7 @@
-# print on the first line of code only if you want this to run when it is imported
-print("This is the blood_calculator module and python calss it {}".format(__name__))
+# print on the first line of code
+# only if you want this to run when it is imported
+print("This is the blood_calculator \
+        module and python calls it {}".format(__name__))
 
 def interface():
     print("Blood Test Analysis")
