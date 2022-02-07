@@ -5,10 +5,10 @@ class Patient:
         self.id = patient_id
         self.age = age
         self.test = []
-    
+
     def __repr__(self):
         return "Patient: {}, {}".format(self.name, self.id)
-    
+
     def output_patient(self):
         output_string = "Name: {}\n".format(self.name)
         output_string += "ID: {}\n".format(self.id)
