@@ -2,6 +2,7 @@
 from flask import Flask, request, jsonify
 from blood_calculator import check_HDL
 
+
 app = Flask(__name__)
 
 
@@ -46,6 +47,6 @@ def add2(a, b):
     answer = int(a) + int(b)
     return jsonify(answer)
 
+
 if __name__ == "__main__":
     app.run()
-
